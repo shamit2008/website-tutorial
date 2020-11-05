@@ -1,59 +1,42 @@
-<p> Hello World</p>
-
-<!-- 
-    git status - the status of your docs
-
-    staged vs unstaged:
-        staged means ready to send to GitHub (commit)
-        unstaged means not ready yet
-        Ex: you change a line of here. if you don't want to send it, leave it as unstaged. if you want to send it, stage it
+<!doctype html>
+<html>
+  <head>
+    <title>Website security</title>
+    <script src="popup.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      body{
+        background-color:paleturquoise;
+      }
+    </style>
+  </head>
+  <body>
+  <div class = "topnav">
+    <a href = "contactUs.html">Contact us</a>
+  </div>
+  <br>
+  <br>
+  <hr>
+    <h1 id = "title" class="title">Security Scanner</h1>
+  <br>
+  <p class = "desc">This website used data to determine if websites are safe for kids.<br> The three levels of safety are:</p>
+  <ol>
+    <li style="color:green">Completely safe for kids</li>
+    <li style="color:darkgoldenrod">It is mainly safe, but has some dangerous content</li>
+    <li style="color:red">Lots of dangerous content.</li>
+  </ol>
+  <br>
+    <div class = "buttonRequest">
+    <button id="checkPage", onclick="requestSite()" class = "checkPage">Check any page now!</button>
+    </div>
+    <h3 id = "safety"></h3>
+    <h5 id = "disclaimer"></h5>
     
-    to stage:
-        git add 'file name'
-        git add . (stages all unstaged files)
-    
-    committing:
-        making your files committed to send to Github
-        you can't unstage files from here, they're committed to changing
-    
-    to commit:
-        git commit -m "whatever message here, usually say what you changed"
-
-    pushing/pulling:
-        pushing = sends committed files from your local repository to GitHub's repository
-        pulling = get all changes from online
-    
-    to push:
-        git push origin master
-    
-    look up Git basic commands
-    TLDR:
-        write your files, save files
-        git status to make sure they're fine
-        git add .
-        git commit -m "message"
-        git push origin master
-
-    Steps:
-        1. write stuff, add files, etc
-            1a. save everything
-        2. open terminal
-            - cd Desktop
-            - cd website-tutorial
-        3. git status and check that all files there are correct
-        4. git add .
-        5. git commit -m "message"
-        6. git push origin
-        7. check github online to make sure changes are there
-
-
-    Hw:
-        - google react website tutorial
-            - get to the atom page
-            - make that directory into a git repository
-            - https://www.pluralsight.com/guides/how-to-create-react-application-and-deploy-on-github-pages
-                (create react app command)
-            - look into ways of changing that initial react page into your app
-
-        
- -->
+    <br>
+    <div id = "afterRequest">
+      <button id = "contest" onclick = contest() style = "display: none;">Contest the result</button>
+      <br>
+      <a href="mailto:shauryamittal5@gmail.com?subject=I%20found%20an%20error%20in%20your%20website." id = "feedback" style = "display: none;">Do you see an error? Click here to let us know.</a>
+    </div>
+  </body>
+</html>
