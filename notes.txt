@@ -1,7 +1,5 @@
-<p> Hello World</p>
-
-<!-- 
-    git status - the status of your docs
+ Hello World
+git status - the status of your docs
 
     staged vs unstaged:
         staged means ready to send to GitHub (commit)
